@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Investment User Submit</title>
+<title>Investment Withdrawal Request</title>
+
 <style>
+
 body{
 font-family: Arial;
-background:#f2f2f2;
+background: linear-gradient(135deg,#1e90ff,#00c9a7);
 padding:20px;
 }
 
 .form-box{
 background:white;
-padding:20px;
-max-width:400px;
+padding:25px;
+max-width:420px;
 margin:auto;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+}
+
+label{
+font-weight:bold;
 }
 
 input,select{
 width:100%;
-padding:10px;
+padding:12px;
 margin:8px 0;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
 button{
@@ -30,40 +42,62 @@ padding:12px;
 background:#28a745;
 color:white;
 border:none;
+border-radius:6px;
+font-size:16px;
 }
+
+button:hover{
+background:#218838;
+}
+
+.ref{
+text-align:center;
+margin-top:15px;
+}
+
+.ref b{
+color:red;
+font-size:17px;
+}
+
 </style>
+
 </head>
 
 <body>
 
 <div class="form-box">
 
-<h2>User Investment Submit</h2>
+<h2>Investment Withdrawal Request</h2>
 
-<form action="#" method="post" enctype="multipart/form-data">
+<form>
 
 <label>User Name</label>
-<input type="text" name="username" required>
+<input type="text" required>
 
 <label>User ID</label>
-<input type="text" name="userid" required>
+<input type="text" required>
 
-<label>Payment Amount</label>
-<input type="number" name="amount" required>
+<label>Withdraw Amount</label>
+<input type="number" required>
 
-<label>Withdraw System</label>
-<select name="withdraw">
+<label>Withdraw Method</label>
+<select>
 <option>bKash</option>
 <option>Nagad</option>
 <option>Bank</option>
 </select>
 
-<label>Submit File</label>
-<input type="file" name="file">
+<label>bKash / Nagad Number</label>
+<input type="text" required>
 
-<button type="submit">Submit</button>
+<button type="submit">Submit Withdrawal</button>
 
 </form>
+
+<div class="ref">
+Refered By <b>ASRAF MAHDI</b>
+</div>
 
 </div>
 
